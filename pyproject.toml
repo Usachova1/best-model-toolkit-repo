@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "best-model-toolkit"
+version = "0.2.0"
+description = "Train, tune, and compare sklearn/XGBoost models with built-in metric plots"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name" }
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn>=1.2",
+    "xgboost",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/best-model-toolkit"
+Issues = "https://github.com/YOUR_USERNAME/best-model-toolkit/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
