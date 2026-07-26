@@ -16,7 +16,43 @@ without needing your own dataset.
 
 ```bash
 pip install best-model-toolkit
-python regression_example.py
+python plots_gallery_example.py
 ```
 
 (or open any of these files in Jupyter / Google Colab and run cell by cell)
+
+## What the plots look like
+
+### Overview plots
+
+Correlation heatmap (`pairplot_type="heatmap"`, the default):
+
+![Correlation heatmap](previews/corr_heatmap.png)
+
+Pairplot limited to the top-correlated features (`pairplot_type="top_corr"`):
+
+![Top-correlated pairplot](previews/top_corr_pairplot.png)
+
+### Regression
+
+Per-model test-set scatter plot (predicted vs. actual):
+
+![Regression test scatter](previews/regression_test_scatter.png)
+
+Final comparison across all models:
+
+![R2 comparison](previews/regression_r2_comparison.png)
+![RMSE comparison](previews/regression_rmse_comparison.png)
+![MAE comparison](previews/regression_mae_comparison.png)
+
+### Classification
+
+Per-model normalized confusion matrix:
+
+![Confusion matrix](previews/classification_confusion_matrix.png)
+
+Final comparison across all models:
+
+![Score comparison](previews/classification_score_comparison.png)
+![F1 comparison](previews/classification_f1_comparison.png)
+![Precision-recall curve](previews/classification_pr_curve.png)
